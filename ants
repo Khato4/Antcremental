@@ -1,0 +1,24 @@
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+	<div class="cont">
+	</div>
+</body>
+
+<script>
+	$(function(){
+		setInterval(oneSec, 1000);
+	});
+
+	var food = 0;
+	function oneSec(){
+		food++;
+		$('.cont').text(food);
+
+	}
+</script>
+
+</html>
